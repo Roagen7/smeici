@@ -11,7 +11,7 @@ public void Main(){
     var display = GridTerminalSystem.GetBlockWithName("Wide LCD panel") as  IMyTextPanel;
     display.FontColor = red;
     display.FontSize = 5;
-    display.WritePublicText("Roksa na wêgiel");
+    display.WritePublicText("Roksa na wÄ™giel");
     display.ShowPublicTextOnScreen();   
    
     
