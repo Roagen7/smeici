@@ -6,8 +6,8 @@ mkdir repos_dir
 mkdir repo
 svnadmin create repos_dir/repo/
 
-chown www-data:www-data repos_dir -R
-chmod u+rwx,g+rw repos_dir -R
+chown -R www-data:www-data repos_dir
+chmod -R 755 repos_dir
 
 # file with passwords
 htpasswd -c passwds ix
@@ -17,4 +17,10 @@ htpasswd passwds user1
 ls /etc/apache2/mods-available
 a2enmod dav_svn
 a2enmod authz_svn
+
+
+# https
+a2enmod rewrite
+a2enmod ssl
+a2ensite default-ssl
 
