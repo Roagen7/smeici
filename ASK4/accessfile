@@ -1,0 +1,6 @@
+[repo1:/]
+user1 = rw
+
+[repo2:/]
+user1 = r
+user2 = rw
